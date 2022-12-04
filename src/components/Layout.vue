@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <main class="container flex-grow px-4 mx-auto my-12">
+    <main class="container size">
       <slot />
     </main>
     <Footer />
@@ -17,6 +17,15 @@ export default {
     Header,
     Footer
   }
+
+}
+</script>
+
+<style>
+.size {
+  min-height: 80vh;
+}
+</style>
 
 }
 </script>

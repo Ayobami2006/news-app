@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="cols-1 gap-6 mt-4 mdcols-2 lg:cols-3 2xl:cols-4 justify-content-md-center"
-  >
+  <div>
     <b-row>
       <b-col>
         <NewsCard v-for="(post, index) in posts" :key="index" :post="post" />

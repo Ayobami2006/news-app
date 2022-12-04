@@ -1,7 +1,7 @@
 <template>
   <div class="p-5 general">
     <!-- Start of select dropdown -->
-    <div class="butn">
+    <div class="d-inline-flex">
       <!-- <svg
         class="absolute top-0 right-0 w-2 h-2 m-4 pointer-events-none"
         xmlns="http://www.w3.org/2000/svg"
@@ -13,8 +13,8 @@
           fill-rule="nonzero"
         />
       </svg> -->
-      <select
-        class=""
+      <select id="inlineFormCustomSelectPref"
+        class="custom-select mr-sm-2"
         v-model="section"
       >
         <option
@@ -25,7 +25,9 @@
           {{ capitalize(section) }},
         </option>
       </select>
+     <div class="button">
       <b-button variant="success" class="text-white" @click="fetch()">Retrieve</b-button>
+     </div>
     </div>
     <!-- End of select dropdown -->
   </div>
@@ -66,11 +68,17 @@ export default {
 </script>
 
 <style>
-.butn {
+/* .butn {
   text-align: center;
   display: inline;
-}
+} */
 .general {
   text-align: center;
+  justify-content: center;
+}
+
+.button {
+  padding-left: 10px;
 }
 </style>
+

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-        <section class="p-5 m-4 rounded-lg shadow-lg bg-light w-20 ">
+        <section class="p-5 m-3  rounded-lg shadow-lg bg-light w-20" style="height: 580px; width: 410px;">
           <div>
             <b-card
               :title="post.title"
@@ -8,10 +8,10 @@
               img-alt="Image"
               img-top
               tag="article"
-              style="max-width: 20rem;"
+              style="width: 20rem; max-height: 42rem;"
               class="mb-2"
             >
-            <b-card-text>
+            <b-card-text style="width: 295px">
               <a
               class="text-xl font-bold text-center text-green-800 hover:text-green-600 hover:underline"
               :href="post.url"

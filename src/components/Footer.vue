@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="bg-success height">
     <div class="footer">
-      <nav class="navbar navbar-expand-lg bg-success pt-4">
+      <nav class="navbar navbar-expand-lg pt-4">
         <div class="container-md">
-        <h5 class="text-white text">Copyright (c)<span class="text-warning">2021 SitePoin</span></h5>
+        <h5 class="text-white footer">Code(c)<span class="text-warning">Abdul Azeez</span></h5>
         </div>
      </nav>
    </div>
@@ -17,8 +17,14 @@ export default {
 </script>
 
 <style>
-.text {
+.footer {
   margin: 0 auto 0 auto;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.height {
+  height: 10vh;
 }
 
 </style>

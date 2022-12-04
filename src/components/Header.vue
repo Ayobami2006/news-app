@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <div class="bg-success head">
+  <div class="bg-success height">
+    <div class="head">
       <img src="../assets/logo.png" alt="" class="logo">
-      <span class="text-light">Vue News | NYTimes Edition</span>
+      <span class="text-light bold">Vue News | NYTimes Edition</span>
     </div>
   </div>
 </template>
@@ -17,7 +17,15 @@ export default {
 .head {
   text-align: center;
 }
+
 .logo {
   width: 50px;
+  margin: 12px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: medium;
 }
 </style>
+
